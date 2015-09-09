@@ -28,5 +28,10 @@ describe('sentanceMill', function() {
 
     it("uses pigLatin() to translate a word", function() {
         expect(sentanceMill("hello")).to.equal("ellohay");
-    })
+    });
+
+    it("uses pigLatin() to translate 2 words", function() {
+        expect(sentanceMill("hello world")).to.equal("ellohay orldway");
+    });
+
 });

@@ -1,11 +1,13 @@
-var pigLatin = function(input) {
+"use strict";
+
+var pigLatin = function (input) {
 
     var firstLetter = input.slice(0, 1);
     var firstTwoLetters = input.slice(0, 2);
     var firstThreeLetters = input.slice(0, 3);
     var vowels = ["a", "e", "i", "o", "u"];
     var digraphs = ["bl", "br", "ch", "ck", "cl", "cr", "dr", "fl", "fr", "gh", "gl", "gr", "ng", "ph", "pl", "pr", "qu", "sc", "sh", "sk", "sl", "sm", "sn", "sp", "st", "sw", "th", "tr", "tw", "wh", "wr"];
-    var trigraphs = ["nth", "sch", "scr", "shr", "spl", "spr", "squ", "str", "thr"]
+    var trigraphs = ["nth", "sch", "scr", "shr", "spl", "spr", "squ", "str", "thr"];
 
     if (vowels.indexOf(firstLetter) > -1) {
 
@@ -22,12 +24,12 @@ var pigLatin = function(input) {
     } else {
 
         input = input.slice(1) + firstLetter + "ay";
-    };
+    }
 
     return input;
 };
 
-var sentanceMill = function(input) {
+var sentanceMill = function (input) {
 
     return pigLatin(input);
 
