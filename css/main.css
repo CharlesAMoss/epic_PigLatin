@@ -98,6 +98,10 @@ header {
 
 /* form ====================== */
 
+#result{
+	display:none;
+}
+
 .main__form {
 	padding: 40px;
 	border: 1px solid #d6cac2;
@@ -135,7 +139,15 @@ header {
 	font-size: 1em;
 }
 
+.main__result{
+	font-size: 1.5rem;
+	color: #bb0f00;
 
+}
+
+.main__result p:before {
+	content: ">> ";
+}
 
 
 /* ================== picture gallery */

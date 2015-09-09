@@ -21,21 +21,21 @@ describe('pigLatin', function() {
 
 });
 
-describe('sentanceMill', function() {
+describe('sentenceMill', function() {
     it("enter a string and recieve a string", function() {
-        expect(sentanceMill("hello world")).to.be.a("string");
+        expect(sentenceMill("hello world")).to.be.a("string");
     });
 
     it("uses pigLatin() to translate a word", function() {
-        expect(sentanceMill("hello")).to.equal("ellohay");
+        expect(sentenceMill("hello")).to.equal("ellohay");
     });
 
     it("uses pigLatin() to translate 2 words", function() {
-        expect(sentanceMill("hello world")).to.equal("ellohay orldway");
+        expect(sentenceMill("hello world")).to.equal("ellohay orldway");
     });
 
     it("uses pigLatin() and compsensates for punctuaton", function() {
-        expect(sentanceMill("squid, is cool!")).to.equal("idsquay, isay oolcay!");
+        expect(sentenceMill("squid, is cool!")).to.equal("idsquay, isay oolcay!");
     });
 
 

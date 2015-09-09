@@ -1,6 +1,4 @@
-"use strict";
-
-var pigLatin = function (input) {
+var pigLatin = function(input) {
 
     var firstLetter = input.slice(0, 1);
     var firstTwoLetters = input.slice(0, 2);
@@ -29,12 +27,11 @@ var pigLatin = function (input) {
     return input;
 };
 
-var sentanceMill = function (input) {
+var sentenceMill = function(input) {
 
     var splitString = input.split(/\s*\b\s*/);
     var output = "";
     var punctuation = [",", ".", "!", "?", ";", ":", "'", '"'];
-
     for (var string of splitString) {
         if (!(punctuation.indexOf(string) > -1)) {
 
@@ -49,3 +46,20 @@ var sentanceMill = function (input) {
     return finOutput;
 
 };
+
+
+$(document).ready(function() {
+
+    $("form#pigLatin").submit(function(event) {
+
+        var phrase = $("input#phrase").val();
+
+        var result = sentenceMill(phrase);
+
+        $("#result p").text(result);
+
+        $("#result").show();
+        event.preventDefault();
+    });
+
+});
