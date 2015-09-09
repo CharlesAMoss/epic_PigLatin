@@ -31,13 +31,21 @@ var pigLatin = function (input) {
 
 var sentanceMill = function (input) {
 
-    var splitString = input.split(" ");
+    var splitString = input.split(/\s*\b\s*/);
     var output = "";
-    for (var string of splitString) {
-        pigLatin(string);
-        output = output + " " + string;
-    }
+    var punctuation = [",", ".", "!", "?", ";", ":", "'", '"'];
 
-    return output;
+    for (var string of splitString) {
+        if (!(punctuation.indexOf(string) > -1)) {
+
+            var pigString = pigLatin(string);
+            output = output + pigString + " ";
+        } else {
+            output = output.slice(0, -1) + string + " ";
+        }
+    }
+    var finOutput = output.slice(0, -1);
+
+    return finOutput;
 
 };

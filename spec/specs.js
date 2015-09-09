@@ -34,4 +34,9 @@ describe('sentanceMill', function() {
         expect(sentanceMill("hello world")).to.equal("ellohay orldway");
     });
 
+    it("uses pigLatin() and compsensates for punctuaton", function() {
+        expect(sentanceMill("squid, is cool!")).to.equal("idsquay, isay oolcay!");
+    });
+
+
 });
