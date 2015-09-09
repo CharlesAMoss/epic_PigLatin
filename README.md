@@ -8,6 +8,10 @@
 
 _User enters a word or sentence and it is translated into Pig Latin._
 
+## Demo
+
+_Veiw a [demo](http://codepen.io/CharlesAMoss/pen/dYYyQb) on Codepen_
+
 ## Setup
 
 _Clone and open index.html in your browser._  
