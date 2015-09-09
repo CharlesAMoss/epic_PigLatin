@@ -1,6 +1,5 @@
 var pigLatin = function(input) {
 
-
     var firstLetter = input.slice(0, 1);
     var firstTwoLetters = input.slice(0, 2);
     var firstThreeLetters = input.slice(0, 3);
@@ -26,5 +25,10 @@ var pigLatin = function(input) {
     };
 
     return input;
+};
+
+var sentanceMill = function(input) {
+
+    return "";
 
 };
