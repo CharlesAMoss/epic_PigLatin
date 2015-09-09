@@ -7,5 +7,9 @@ describe('pigLatin', function() {
     expect(pigLatin("apple")).to.equal("appleay");
   });
 
+  it("move constants at the begining of a word to the end and adds -ay", function() {
+    expect(pigLatin("chai")).to.equal("aichay");
+  });
+
 
 });
