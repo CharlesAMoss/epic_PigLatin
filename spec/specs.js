@@ -25,4 +25,8 @@ describe('sentanceMill', function() {
     it("enter a string and recieve a string", function() {
         expect(sentanceMill("hello world")).to.be.a("string");
     });
+
+    it("uses pigLatin() to translate a word", function() {
+        expect(sentanceMill("hello")).to.equal("ellohay");
+    })
 });
