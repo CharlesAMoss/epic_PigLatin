@@ -29,6 +29,6 @@ var pigLatin = function(input) {
 
 var sentanceMill = function(input) {
 
-    return "";
+    return pigLatin(input);
 
 };
