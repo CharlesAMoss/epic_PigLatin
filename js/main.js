@@ -31,6 +31,13 @@ var pigLatin = function (input) {
 
 var sentanceMill = function (input) {
 
-    return pigLatin(input);
+    var splitString = input.split(" ");
+    var output = "";
+    for (var string of splitString) {
+        pigLatin(string);
+        output = output + " " + string;
+    }
+
+    return output;
 
 };
