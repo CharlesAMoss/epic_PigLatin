@@ -1,3 +1,9 @@
 var pigLatin = function(input) {
-    return "";
+
+    var vowels = ["a", "e", "i","o","u"];
+    if (input.indexOf(vowels)){
+        input = input + "ay";
+    };
+
+    return input;
 };
