@@ -7,7 +7,10 @@ var pigLatin = function(input) {
     if (vowels.indexOf(firstLetter) > -1) {
 
         input = input + "ay";
-    };
+    } else {
+
+        input = input.slice(1) + firstLetter + "ay";
+    }
 
 
 
